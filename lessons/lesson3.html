@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Это "тернарный оператор". Называется так из-за того, что "?" – единственный оператор, у которого есть три аргумента, в то время как у обычных их 1 или 2.-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Условные операторы</title>
+</head>
+<!-- усл операторы исп для проверки, сравнения одной, двух переменных или больше-->
+<body>
+
+    <script type="text/javascript">
+    document.write("IF");
+    document.write("<br/>")
+    document.write("<br/>")
+    var x = 4;
+    var y = 5;
+    if(x != y)
+document.write("x != y"); //выведется на экран
+ if(x == y)
+document.write("x == y"); //не выведется
+document.write("<br/>")
+ /*if(x < y){
+document.write("x < y");
+document.write("<br/>");
+document.write("4 < 5");
+ }
+ document.write("<br/>"); */
+ if(x > y)
+ document.write("x > y");
+ else if(x == y)
+ document.write("x == y");
+ else // можно дописать if (x < y), но не нужно
+ document.write("x < y"); //вывелось
+ document.write("<br/>")
+ document.write("<br/>")
+ document.write("SWITCH CASE");
+ document.write("<br/>")
+
+ var result = 1;
+
+ switch(result)
+ {
+     case 1: document.write("result = 1");
+        break;
+     case 2: document.write("result = 2");
+        break;
+     case 3: document.write("result = 3");
+        break;
+     case 4: document.write("result = 4");
+        break;
+ }
+</script>
+
+</body>
+</html>

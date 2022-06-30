@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математические операции</title>
+</head>
+<body>
+    <script type= "text/javascript">
+    var x = 5;
+    var y;
+    var result;
+    y = 5;
+    result = x + y;
+    document.write("Ответ1 = " +result + "<br/>");
+    result *=x; //( это = result * x (или вместо / другие операции + - /))
+    document.write("Ответ2 = " +result + "<br/>") ;
+     result += 1 ; //(или можно записать result ++;)
+    document.write("Ответ3 = " +result);
+document.write("<br/>")
+//так же можно выполнять операции в самом document.write
+document.write(x + "+" + y + "=" + x + y +"<br / >" ); // 5+5 = 55 
+document.write(x + "+" + y + "=" + (x + y) +"<br / >" ); // 5 + 5 = 10
+var str_1 = "12";
+var str_2 = "24";
+document.write(str_1 + str_2); // 1224 это строчки
+document.write("<br/>");
+//с помощью функции Number() можно привести эти строки к целочисленным типам даннымм : 
+document.write(Number(str_1) + Number(str_2)); //36
+//так же можно это делать в переменноф
+var str_3 = Number("48");
+document.write("<br/>");
+document.write("<br/>");
+document.write("Логические операции: >, <, ==,  <=,  >=  ");
+document.write("<br/>");
+
+var bool;
+var z = 6;
+var d = 7;
+bool = z < d;
+document.write("z < d = " + bool) //true
+document.write("<br/>");
+bool = z > d;
+document.write("z > d = " + bool) //false
+document.write("<br/>");
+bool = z == d;
+document.write("z == d = " + bool) //false
+document.write("<br/>");
+document.write("Остаток при делении: ");
+document.write("<br/>");
+document.write("<br/>");
+document.write(10 + "%" + 7 + "="+ (10%7)); //3 
+
+    </script>
+</body>
+</html>
