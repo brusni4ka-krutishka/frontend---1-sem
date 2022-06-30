@@ -13,8 +13,34 @@
     document.write("IF");
     document.write("<br/>")
     document.write("<br/>")
-    var x = 4;
+    var x = 6;
     var y = 5;
+    var a = 11;
+    var b = 15;
+    var c = true;
+    var bool = false;
+    document.write("<br/>")
+    document.write("<br/>")
+    if(x > y) { //если одно условие if(var), то идет проверка на истину
+        if(!bool) //"не", конвертирует. у нас было false и строчка не выводилась, а теперь все норм
+        document.write("TRUE");
+    }
+       document.write("<br/>")
+    document.write("<br/>")
+    if( a < b && c == true) // && - и
+    {
+        document.write("ПРАВДА")
+    } 
+     document.write("<br/>") // || - или
+    if( a > b || c == false) //не выведет, т.к. ничего из этого не верно 
+
+    {
+        document.write("ПРАВДА")
+    } 
+    
+    /*
+    document.write("<br/>")
+    document.write("<br/>")
     if(x != y)
 document.write("x != y"); //выведется на экран
  if(x == y)
@@ -25,7 +51,7 @@ document.write("x < y");
 document.write("<br/>");
 document.write("4 < 5");
  }
- document.write("<br/>"); */
+ document.write("<br/>"); 
  if(x > y)
  document.write("x > y");
  else if(x == y)
@@ -37,7 +63,7 @@ document.write("4 < 5");
  document.write("SWITCH CASE");
  document.write("<br/>")
 
- var result = 1;
+ var result = 5;
 
  switch(result)
  {
@@ -49,7 +75,21 @@ document.write("4 < 5");
         break;
      case 4: document.write("result = 4");
         break;
+        default: document.write("Неверно")
  }
+ document.write("<br/>");
+ document.write("<br/>");
+ document.write("ТЕРНАРНЫЙ ОПЕРАТОР ?");
+ document.write("<br/>");
+ //СИНТАКСИС
+ //let result = условие ? значение1 : значение2;
+//x = 4, y = 5
+x > y ? document.write("YES"): document.write("NO")
+
+*/
+
+
+
 </script>
 
 </body>
