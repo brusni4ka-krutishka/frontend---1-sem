@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Третья лабораторная</title>
+		<style>
+			table {
+				border-collapse: collapse;
+			}
+			td {
+				border: 1px solid black;
+				text-align: center;
+				padding: 5px;
+			}
+			tr {
+				border: 1px solid black;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			//первое задание
+			let expression = [
+				6 * Math.pow(Math.PI, 2) + 3 * Math.pow(Math.exp(0), 8),
+				2 * Math.cos(4) + Math.cos(12) + 8 * Math.pow(Math.exp(1), 3),
+				3 * Math.sin(9) + Math.log(5) + Math.sqrt(3),
+				2 * Math.tan(5) + 6 * Math.PI + Math.sqrt(12),
+			];
+			document.write(
+				` ПЕРВОЕ ЗАДАНИЕ
+				 <br/>
+				 ${expression[0].toFixed(3)}
+				 <br/>
+				 ${expression[1].toFixed(3)}
+				  <br/>
+				   ${expression[2].toFixed(3)}
+				    <br/>
+					${expression[3].toFixed(3)}
+					 <br/>`
+			);
+			document.write(`
+				Максимальное число: ${Math.max(...expression).toFixed(4)}
+				 <br/>
+				 Минимальное число: ${Math.min(...expression).toFixed(4)}
+				  <br/>`);
+			//второе задание
+			let A = [
+				"pow",
+				"pop",
+				"push",
+				"shift",
+				"round",
+				"floor",
+				"slice",
+				"sort",
+			];
+			document.write(`<br/>
+			 ВТОРОЕ ЗАДАНИЕ 
+			 <br/>
+			 Исходный массив: ${A} 
+			 <br/>`);
+			let B_Math = [A[0], A[4], A[5]];
+			document.write(
+				`Методы объекта Math до добавления элемента: 
+				${B_Math} 
+				<br/>
+				${B_Math.unshift("PI")} 
+				<br>
+				Методы объекта Math после добавления элемента:
+				 ${B_Math} 
+				 <br/>
+				 Длинна массива: 
+				 ${B_Math.length}
+				 <br/>
+				`
+			);
+			let C_Array = [...A.slice(1, 4), ...A.slice(6)];
+			document.write(
+				`Методы объекта Array до добавления элемента:
+				 ${C_Array} 
+				 <br/>
+				 ${C_Array.push("concat")}
+				 <br/>
+				 Методы объекта Array после добавления элемента:
+				 ${C_Array}
+				 <br/>
+				 Длина массива: 
+				 ${C_Array.length}
+				 <br/>
+				 `
+			);
+			document.write(`Длинна исходного массива:
+			${A.length}
+			<br/>
+			`);
+
+			/*for (let i = 0; i < A.length; i++) {
+				document.write(`${A[i]} + <br>`);
+			} */
+			//третье задание
+			let fio = "Новиченко Анастасия Сергеевна";
+			document.write(
+				`<br/>
+				ТРЕТЬЕ ЗАДАНИЕ
+				<br/>
+				 ${fio}
+				 <br/>
+				 ДЛИНА СТРОКИ: ${fio.length}
+				 <br/>
+				 ВЕРХНИЙ РЕГИСТР: ${fio.toUpperCase()}
+				  <br/>
+				   НИЖНИЙ РЕГИСТР: ${fio.toLowerCase()}
+				    <br/>
+					СЛИЯНИЕ: ${fio.toUpperCase().concat(fio.toLowerCase())}
+					<br/>
+					 ЗАМЕНА: ${fio.replace(fio, "НАС")} <br/>`
+			);
+			//четвертое задание
+			x = new Date();
+
+			document.write(`
+			<br/>
+			ЧЕТВЕРТОЕ ЗАДАНИЕ
+			<br/>
+			<br/>
+			<table>
+			<tr>
+				<td>Год</td>
+				<td>${x.getFullYear()}</td>
+			</tr>
+			<tr>
+				<td>Месяц</td>
+				<td>${x.getMonth()}</td>
+			</tr>
+			<tr>
+				<td>День</td>
+				<td>${x.getDate()}</td>
+			</tr>
+			<tr>
+				<td>Час</td>
+				<td>${x.getHours()}</td>
+			</tr>
+			<tr>
+				<td>Минуты</td>
+				<td>${x.getMinutes()}</td>
+			</tr>
+			<tr>
+				<td>Секунды</td>
+				<td>${x.getSeconds()}</td>
+			</tr>
+			</table>
+			`);
+		</script>
+	</body>
+</html>
